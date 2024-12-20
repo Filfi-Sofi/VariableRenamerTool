@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <!-- Основная информация о плагине -->
+    <id>com.M3117</id>
+    <name>Variable Renamer Tool</name>
+    <version>1.0</version>
+    <vendor email="your.email@example.com" >ITMO</vendor>
+
+    <!-- Описание плагина -->
+    <description>
+        Инструмент для переименования переменных в соответствии с Google Style Guide.
+    </description>
+
+    <!-- Убедитесь, что платформа IntelliJ поддерживается -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Регистрация действия -->
+
+
+    <actions>
+        <action id="VariableRenamerAction" class="VariableRenamerAction" text="Renamer">
+            <keyboard-shortcut keymap="$default" first-keystroke="alt A" second-keystroke="alt F"/>
+        </action>
+    </actions>
+</idea-plugin>
